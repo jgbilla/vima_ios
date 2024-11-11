@@ -51,6 +51,7 @@ dependencies:
   shared_preferences: any
   location: ^4.2.0
   geocoder: ^0.2.1
+  html: ^0.15.0
 
 dev_dependencies:
   flutter_test:

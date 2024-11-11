@@ -1,4 +1,4 @@
-import 'dart:html';
+
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -148,7 +148,7 @@ signInWithGoogle().then((FirebaseUser user) {
     prefs.setString("Name", _user.displayName);
     prefs.setString("Email", _user.email);
     prefs.setString("Phone", _user.phoneNumber);
-    getLocation();
+    //getLocation();
 
   }
 
@@ -181,6 +181,7 @@ signInWithGoogle().then((FirebaseUser user) {
     var first = adresses.first;
 
     prefs.setString("Location",first.toString());
+    print(first.toString());
 
 
   }
